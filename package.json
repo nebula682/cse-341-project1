@@ -1,0 +1,23 @@
+{
+  "name": "cse-341-project1",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nebula682/cse-341-project1.git"
+  },
+  "keywords": [
+    "Malcolm",
+    "Nkomo"
+  ],
+  "author": "Malcolm Nkomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nebula682/cse-341-project1/issues"
+  },
+  "homepage": "https://github.com/nebula682/cse-341-project1#readme"
+}
