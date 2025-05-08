@@ -34,7 +34,8 @@ const createContact = async (req, res) =>{
 };
 const response = await mongodb.getDatabase().db().collection('contacts').insertOne(contact) ;
 if (response.acknowledged){
-                req.status(204).send();
+                res.status(204).json({ message: 'Contact created successfully' }); 
+
 } else{
                 res.status(500).json(response.error ||' Some error occurred while updating the Contact');
 }
@@ -51,7 +52,7 @@ const updateContact = async (req, res) =>{
 };
                                 
 
-const response = await mongodb.getDatabase().collection('contacts').replaceOne({ _id: contactId }, contact);
+const response = await mongodb.getDatabase().db().collection('contacts').replaceOne({ _id: contactId }, contact);
 if (response.modifiedCount > 0) {
                 res.status(204).send();
                 } else {
